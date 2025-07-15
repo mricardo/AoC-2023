@@ -16,9 +16,9 @@ for line in lines:
     green = [int(e) for e in re.findall(r'(\d+) green', l)]
 
     is_possible = (
-        all ((e <= MAX_BLUE for e in blue)) and
-        all ((e <= MAX_RED for e in red)) and
-        all ((e <= MAX_GREEN for e in green))
+        all (e <= MAX_BLUE for e in blue) and
+        all (e <= MAX_RED for e in red) and
+        all (e <= MAX_GREEN for e in green)
     )
     
     if is_possible:
