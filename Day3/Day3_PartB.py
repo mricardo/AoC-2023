@@ -13,9 +13,6 @@ def gear(lines, row_idx, col_idx):
     for dr, dc in DIRECTIONS:
         nr, nc = row_idx + dr, col_idx + dc
 
-        if not (0 <= nr <= max_row and 0 <= nc <= max_col):
-            continue
-
         if 0 <= nr <= max_row and 0 <= nc <= max_col and lines[nr][nc] == '*':
             return (nr, nc)
 
