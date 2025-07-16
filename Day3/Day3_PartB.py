@@ -1,6 +1,5 @@
 import re
 import math
-from numpy import multiply
 from collections import defaultdict
  
  # right, down, left, up, down-right, up-left, up-right, down-left
