@@ -2,9 +2,8 @@ import re
 import math
 
 with open("Day4/Day4_test.txt", "r") as file:
-    lines = file.readlines()
+    lines = file.read().splitlines()
 
-lines = [line.strip() for line in lines if line.strip()]
 total_score = 0
 
 for line in lines:
