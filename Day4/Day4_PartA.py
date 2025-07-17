@@ -13,7 +13,6 @@ for line in lines:
     drawn_numbers = set(re.findall(r'(\d+)', parts[1]))
 
     match_numbers = len(winning_numbers & drawn_numbers)
-    if match_numbers > 0:
-        total_score += int(math.pow(2, match_numbers-1))
+    total_score += int(math.pow(2, match_numbers-1))
 
 print(f"Total Score: {total_score}")
